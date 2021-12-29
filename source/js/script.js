@@ -1,15 +1,9 @@
-'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+const navBar = document.querySelector('.navbar');
+const navBarToggler = navBar.querySelector('.navbar-toggler');
+const navBarCollapse = navBar.querySelector('.navbar-collapse');
 
-pageHeader.classList.remove('page-header--nojs');
+const navBarTogglerHandler = function () {
+  navBar.classList.toggle('bg-primary');
+}
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
-});
+navBarToggler.addEventListener('click', navBarTogglerHandler);
