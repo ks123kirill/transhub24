@@ -1,0 +1,14 @@
+:root {
+  --basic-white: rgba(255, 255, 255, 1);
+  --basic-black: rgba(0, 0, 0, 1);
+  --basic-blue: rgba(1, 153, 239, 1);
+
+  --special-grey: rgba(208, 213, 217, 1);
+}
+
+$font-family-basic: "Avenir Next Cyr", "Arial", sans-serif;
+$desktop-xl-width: 1200px;  //  от 1200px и выше
+$desktop-width: 992px;  //  от 992px и выше
+$tablet-width: 768px;  //  от 768px и выше
+$mobile-width: 320px; //  от 320px и выше
+/////////

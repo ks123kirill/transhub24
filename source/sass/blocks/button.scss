@@ -1,0 +1,11 @@
+.button {
+  border: none;
+
+  &--language {
+    text-align: left;
+    color: var(--basic-white);
+    background-color: transparent;
+    text-transform: uppercase;
+  }
+}
+/////

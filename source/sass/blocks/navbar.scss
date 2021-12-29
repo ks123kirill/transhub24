@@ -1,0 +1,42 @@
+.navbar {
+  transition: background-color ease 1s;
+}
+
+.navbar__language {
+  padding-left: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .navbar {
+    min-height: 130px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .navbar__logo {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+  }
+
+  .navbar__wrapper {
+    flex-grow: 1;
+    border-bottom: 1px solid var(--special-grey);
+  }
+
+  .navbar__language {
+    margin-right: 60px;
+  }
+
+  .navbar__private-link {
+    padding: 5px;
+  }
+}
+
+@media (min-width: $desktop-xl-width) {
+  .navbar__logo {
+    transform: translateX(-575px);
+    left: 50%;
+    right: 50%;
+  }
+}
