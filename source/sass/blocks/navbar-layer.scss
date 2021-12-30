@@ -25,12 +25,20 @@
   .navbar-layer {
     max-width: 1260px;
     padding-right: 30px;
-    outline: 2px dotted yellowgreen;
-    outline-offset: -2px;
+    outline: 2px dotted yellowgreen; /////////
+    outline-offset: -2px;  //////////////
   }
 
   .navbar-layer-1 {
     padding-left: 30px;
+  }
+}
+
+// ----- Для фиксации меню на 1800px ------ //
+
+@media (min-width: $desktop-xl-width + 600px) {
+  .navbar-layer {
+    width: 1260px;
   }
 }
 
